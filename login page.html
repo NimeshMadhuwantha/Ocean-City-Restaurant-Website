@@ -1,0 +1,187 @@
+<html>
+<html lang="en">
+    <head>
+        <style>
+            #rt{
+                background-image: url("images/background.jpg") ;
+            }
+            .login-container{
+	display: flex;
+	flex-direction: row;
+    
+	background-size: cover;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.login{	
+    position: absolute;
+	width: 500px;
+	height: 500px;
+	background-color: #ffffff;
+	border: 2px solid transparent;
+	border-radius: 30px;
+	filter: drop-shadow(0 -5px 10px rgb(0, 0, 0));
+}
+
+.login-img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login img{
+	width: 170px;
+	margin-top: 30px;
+
+}
+
+
+.login h1{
+	text-align: center;
+	padding-top: 15px;
+}
+
+
+.login-user{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login #user{
+	width: 50%;
+	position: absolute;
+	margin-top: 120px;
+	padding: 10px;
+	border: 2px solid #529a9c;
+	border-radius: 15px;
+}
+
+
+.login-pw{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login #pw{
+	width: 50%;
+	position: absolute;
+	margin-top: 220px;
+	padding: 10px;
+	border: 2px solid #529a9c;
+	border-radius: 15px;
+}
+.newb{
+	margin-top: 150px;
+	background-color: #67e1e6;
+	color: white;
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .5s;
+
+}
+
+.newb:hover{
+	color: #2bbd8c;
+	padding: 9px 16px;
+	background-color: transparent;
+	border: 2px solid #1f9f86;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+
+.login-sub{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login p{
+	padding-top: 45px;
+	padding-left: 30px;
+	font-weight: bold;
+}
+
+.login a{
+    text-decoration: none;
+    font-weight: bold;
+	color: #67e1e6;
+	transition-duration: .4s;
+}
+
+.login a:hover{
+	color: #175376;
+}
+#but1 a{
+	text-decoration: none;
+	
+}
+#but1{
+	height: 40px;
+	width: 100px;
+}
+
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="guru2.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="icon" href="images/1280x1024-educational-institution_4x.png" />
+    </head>
+    <body id="rt">
+		
+			<a href="home.html"><button id="but1">Back</button></a>
+
+		
+        
+        <div class="login-container">
+            <div class="login">
+                
+                <h1>Login To Your Account</h1>
+                <form action="home.html">
+
+
+                    <div class="login-user">
+                        <input
+                            type="text"
+                            name="username"
+                            placeholder="Enter Your Username"
+                            maxlength="8"
+                            id="user"
+                        />
+                    </div>
+
+                    <div class="login-pw">
+                        <input
+                            type="password"
+                            name="password"
+                            placeholder="Enter your password"
+                            maxlength="8"
+                            id="pw"
+                        />
+                    </div>
+
+                    <div class="login-sub">
+                        <input type="submit" class="newb" />
+                    </div>
+
+
+                </form>
+                
+                <p>Don't have a account yet?
+                <span><a href="signup page.html">Sign Up</a></span></p>
+            </div>
+        </div>
+    </body>
+</html>
